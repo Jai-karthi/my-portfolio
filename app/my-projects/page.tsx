@@ -43,7 +43,7 @@ function project() {
         <SwiperSlide key = {card.title}>
         
         <div className='shadow-lg rounded-lg  '>
-          <Image key={card.title} className=' rounded-t-lg' src={card.src} alt =""/>
+          <img  key={card.title} className=' rounded-t-lg' src={card.src} alt =""/>
           
           <div className='p-5'>
           <h3 className='text-3xl font-bold text-slate-300'>{card.title}</h3>
