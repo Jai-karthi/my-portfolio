@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { Projects } from '@/constants'
-import Head from 'next/head'
+
 
 import { Swiper,SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -43,14 +43,14 @@ function project() {
         <SwiperSlide key = {card.title}>
         
         <div className='shadow-lg rounded-lg  '>
-          <Image  className=' rounded-t-lg' src={card.src} alt =""/>
+          <Image  className=' rounded-t-lg' src={card.src} alt ={card.title}/>
           
           <div className='p-5'>
           <h3 className='text-3xl font-bold text-slate-300'>{card.title}</h3>
           <p className='text-lg font-normal text-slate-400'>{card.text}</p>
-          <Link key={card.title} href={card.srccode} className="mb-5 pl-4 min-w-[20%]">
+          <Link href={card.srccode} className="mb-5 pl-4 min-w-[20%]">
            
-           <button key={card.title} className= "bg-transparent hover:bg-gray-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-400 y-500 hover:border-transparent rounded">
+           <button className= "bg-transparent hover:bg-gray-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-400 y-500 hover:border-transparent rounded">
            sourcecode 
            </button>
            
