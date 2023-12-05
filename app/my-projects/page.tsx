@@ -49,7 +49,7 @@ function project() {
           <p className='text-lg font-normal text-slate-400'>{card.text}</p>
           <Link href={card.srccode} className="mb-5 pl-4 min-w-[20%]">
            
-           <button className= "bg-transparent hover:bg-gray-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-400y-500 hover:border-transparent rounded">
+           <button className= "bg-transparent hover:bg-gray-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-400 y-500 hover:border-transparent rounded">
            sourcecode 
            </button>
            
