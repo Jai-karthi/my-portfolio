@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="w-screen h-screen relative">
       <div
-        className="flex items-center w-full h-full bg-cover bg-center"
+        className="flex  w-full h-full bg-cover bg-center sm:text-left flex-1  items-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
@@ -21,7 +21,7 @@ export default function Home() {
             </span> <span>🖖🏻.</span>
           </h1>
           
-          <div className="flex-col md:flex-row hidden md:flex gap-5">
+          <div className="flex-col md:flex-row hidden md:flex gap-5 sm:text-right ">
             <Link
               href="/my-skills"
               className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
+      {/* <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
         <Link
        
           href="/my-skills"
@@ -69,7 +69,7 @@ export default function Home() {
         >
           Contact me
         </Link>
-      </div>
+      </div> */}
 
       <div className="absolute bottom-0 right-0 z-[10]">
       <Image
