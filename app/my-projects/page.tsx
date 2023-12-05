@@ -2,7 +2,7 @@
 import React from 'react'
 import { Projects } from '@/constants'
 import Head from 'next/head'
-import 'bootstrap/dist/css/bootstrap.css'
+
 import { Swiper,SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import  'swiper/css/pagination'
@@ -48,7 +48,10 @@ function project() {
           <h3 className='text-3xl font-bold text-slate-300'>{card.title}</h3>
           <p className='text-lg font-normal text-slate-400'>{card.text}</p>
           <Link href={card.srccode} className="mb-5 pl-4 min-w-[20%]">
-           <button type="button" className="btn btn-outline-light"> sourcecode </button>
+           
+           <button className= "bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+           sourcecode 
+           </button>
             </Link>
           </div>
           
