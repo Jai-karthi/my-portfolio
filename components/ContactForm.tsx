@@ -5,12 +5,12 @@ import { useRef } from "react";
 const ContactForm = () => {
   const refForm = useRef()
 
-  const sendemail = (e)=>{
+  const sendemail = (e: { preventDefault: () => void; })=>{
     e.preventDefault()
     emailjs.sendForm(
       'service_4yen9lj',
      'template_en9wdpt',
-      refForm.current,
+      // refForm.current,
       'UlPsSG6AwE5GFtaai'
     ).then(
       ()=>{
@@ -24,7 +24,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form  ref={refForm} onSubmit={sendemail}>
+    <form onSubmit={sendemail}>
       <h2 className="text-2xl font-bold mb-5 text-white">Contact Me</h2>
       <div className="mb-3">
         <input

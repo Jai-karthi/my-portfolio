@@ -1,10 +1,8 @@
 "use client"
 
-import { color } from "framer-motion";
+
 import Image from "next/image";
 import Link from "next/link";
-import emailjs from '@emailjs/browser'
-import { useRef } from "react";
 
 export default function Home() {
   
@@ -19,7 +17,7 @@ export default function Home() {
            Hi,my name is jai prashanth
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
-              I'm software engineer
+              I am software engineer
             </span> <span>🖖🏻.</span>
           </h1>
           
