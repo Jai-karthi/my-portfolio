@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
+      <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
         <Link
        
           href="/my-skills"
@@ -69,7 +69,7 @@ export default function Home() {
         >
           Contact me
         </Link>
-      </div> */}
+      </div>
 
       <div className="absolute bottom-0 right-0 z-[10]">
       <Image
