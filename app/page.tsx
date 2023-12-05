@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="w-screen h-screen relative">
       <div
-        className="flex  w-full h-full bg-cover bg-center sm:text-left flex-1  items-center"
+        className="flex  w-full h-full bg-cover bg-center sm:text-left   items-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
@@ -21,7 +21,7 @@ export default function Home() {
             </span> <span>🖖🏻.</span>
           </h1>
           
-          <div className="flex-col md:flex-row hidden md:flex gap-5 sm:text-right ">
+          <div className="flex-col md:flex-row hidden md:flex gap-5  ">
             <Link
               href="/my-skills"
               className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
