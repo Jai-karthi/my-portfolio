@@ -1,30 +1,33 @@
 'use client'
-import React from "react";
 import emailjs from '@emailjs/browser'
-import { useRef } from "react";
+import React, { useRef } from "react";
+
 const ContactForm = () => {
-  const refForm = useRef()
+  const reForm =  useRef<HTMLFormElement>(null)
 
-  const sendemail = (e: { preventDefault: () => void; })=>{
-    e.preventDefault()
-    emailjs.sendForm(
-      'service_4yen9lj',
-     'template_en9wdpt',
-      // refForm.current,
-      'UlPsSG6AwE5GFtaai'
-    ).then(
-      ()=>{
-        alert('message sended successfully')
-        // window.location.reload(false)
-      },
-      ()=>[
-        alert('failed to send message please try again')
-      ]
-    )
-  }
-
+  const sendemail = (e:any) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_4yen9lj',
+        'template_en9wdpt',
+         // Use reForm.current instead of e.current
+         reForm.current!, 
+        'UlPsSG6AwE5GFtaai'
+      )
+      .then(
+        () => {
+          alert('Message sent successfully');
+        
+        },  
+        () => {
+          alert('Failed to send message. Please try again.');
+        }
+      );
+  };
+  
   return (
-    <form onSubmit={sendemail}>
+    <form ref={reForm} onSubmit={sendemail}>
       <h2 className="text-2xl font-bold mb-5 text-white">Contact Me</h2>
       <div className="mb-3">
         <input
